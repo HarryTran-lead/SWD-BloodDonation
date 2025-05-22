@@ -1,0 +1,23 @@
+@"
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userprefs
+
+# Publish output
+publish/
+
+# VS Code files
+.vscode/
+
+# Logs
+*.log
+
+# Others
+*.vs/
+"@ | Out-File -Encoding UTF8 .gitignore
