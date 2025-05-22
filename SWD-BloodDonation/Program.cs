@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SWD_BloodDonation.Models; // Đảm bảo namespace này là chính xác cho BloodDonationContext và các Models của bạn
+using SWD_BloodDonation.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
 
 // Đăng ký DbContext với Connection String từ appsettings.json
 builder.Services.AddDbContext<BloodDonationContext>(options =>
@@ -11,31 +9,37 @@ builder.Services.AddDbContext<BloodDonationContext>(options =>
 
 builder.Services.AddControllers();
 
-// BỔ SUNG: Cấu hình Swagger/OpenAPI Services
-builder.Services.AddEndpointsApiExplorer(); // Cần thiết cho Swagger
-builder.Services.AddSwaggerGen(); // Cần thiết cho Swagger
+// Bật swagger dù ở môi trường nào (Azure không phải là Development nên bạn cần bật thủ công)
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// CHẠY MIGRATION trước khi app chạy (Tự động tạo / cập nhật DB trên Azure)
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<BloodDonationContext>();
-    //db.Database.Migrate(); // Tự động tạo / cập nhật DB trên Azure - đã được comment để tránh lỗi "object already exists"
-}
+// Tạo scope để chạy migration (bạn có thể mở lại khi DB đã ổn định)
+// using (var scope = app.Services.CreateScope())
+// {
+//     var db = scope.ServiceProvider.GetRequiredService<BloodDonationContext>();
+//     db.Database.Migrate();
+// }
 
-// BỔ SUNG: Cấu hình HTTP Request Pipeline cho Swagger
-// Thường chỉ kích hoạt Swagger trong môi trường Development để bảo mật
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger(); // Bật middleware Swagger (tạo ra JSON API spec)
-    app.UseSwaggerUI(); // Bật middleware Swagger UI (giao diện web)
-}
+// Bật swagger UI luôn cho tiện test (bạn có thể giới hạn lại môi trường nếu muốn)
+app.UseSwagger();
+app.UseSwaggerUI();
 
-// Nếu bạn muốn dùng HTTPS redirection và Authorization, hãy thêm chúng vào
+// Bật HTTPS redirect nếu muốn (Azure App Service hỗ trợ HTTPS)
 // app.UseHttpsRedirection();
+
+// Nếu bạn có Authentication, bật Authorization
 // app.UseAuthorization();
 
-app.MapControllers(); // Ánh xạ các controller
+app.MapControllers();
+
+// Nếu Azure yêu cầu app lắng nghe ở cổng trong biến môi trường PORT, thì thiết lập lại Kestrel:
+var portEnv = Environment.GetEnvironmentVariable("PORT");
+if (!string.IsNullOrEmpty(portEnv) && int.TryParse(portEnv, out var port))
+{
+    app.Urls.Clear();
+    app.Urls.Add($"http://*:{port}");
+}
 
 app.Run();
