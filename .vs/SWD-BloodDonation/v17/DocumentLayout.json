@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EE6BC59B-552D-47CF-A3F1-C0814503FE99}|SWD-BloodDonation\\SWD-BloodDonation.csproj|c:\\users\\razer\\source\\repos\\swd-blooddonation\\swd-blooddonation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE6BC59B-552D-47CF-A3F1-C0814503FE99}|SWD-BloodDonation\\SWD-BloodDonation.csproj|solutionrelative:swd-blooddonation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EE6BC59B-552D-47CF-A3F1-C0814503FE99}|SWD-BloodDonation\\SWD-BloodDonation.csproj|c:\\users\\razer\\source\\repos\\swd-blooddonation\\swd-blooddonation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE6BC59B-552D-47CF-A3F1-C0814503FE99}|SWD-BloodDonation\\SWD-BloodDonation.csproj|solutionrelative:swd-blooddonation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,30 +22,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SWD-BloodDonation",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SWD-BloodDonation\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SWD-BloodDonation\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-22T11:27:49.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SWD-BloodDonation.csproj",
               "DocumentMoniker": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\SWD-BloodDonation.csproj",
               "RelativeDocumentMoniker": "SWD-BloodDonation\\SWD-BloodDonation.csproj",
               "ToolTip": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\SWD-BloodDonation.csproj",
               "RelativeToolTip": "SWD-BloodDonation\\SWD-BloodDonation.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-20T04:18:08.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T04:18:08.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\Program.cs",
               "RelativeDocumentMoniker": "SWD-BloodDonation\\Program.cs",
               "ToolTip": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\Program.cs",
               "RelativeToolTip": "SWD-BloodDonation\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAWwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T04:17:26.545Z",
               "EditorCaption": ""

@@ -23,15 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SWD-BloodDonation",
+              "Title": "SWD-BloodDonation.csproj",
               "DocumentMoniker": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\SWD-BloodDonation.csproj",
               "RelativeDocumentMoniker": "SWD-BloodDonation\\SWD-BloodDonation.csproj",
               "ToolTip": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\SWD-BloodDonation.csproj",
               "RelativeToolTip": "SWD-BloodDonation\\SWD-BloodDonation.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-20T04:18:08.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T04:18:08.719Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "SWD-BloodDonation\\Program.cs",
               "ToolTip": "C:\\Users\\RAZER\\source\\repos\\SWD-BloodDonation\\SWD-BloodDonation\\Program.cs",
               "RelativeToolTip": "SWD-BloodDonation\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAWwCwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T04:17:26.545Z",
               "EditorCaption": ""
